@@ -20,3 +20,33 @@ function getTotal(list) {
     
     return total;
 }
+
+function getRibbon(list) {
+    let total = 0;
+    
+    list.forEach(function(item) {
+        total += howMuchRibbon(item);
+    });
+    
+    return total;
+}
+
+function howMuchRibbon(input) {
+    let lwh = input.split('x'),
+        l = lwh[0],
+        w = lwh[1],
+        h = lwh[2],
+        values = lwh.sort(function(a, b) {
+            let val = 0;
+            
+            if (a - b > 0) {
+                val = 1;
+            } else if (b - a > 0) {
+                val = -1;
+            }
+            
+            return val;
+        });
+    
+    return l * w * h + 2 * values[0] + 2 * values[1];
+}
