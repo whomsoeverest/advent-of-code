@@ -1,3 +1,4 @@
+// Part 1
 function howMuchPaper(input) {
     let lwh = input.split('x'),
         l = lwh[0],
@@ -11,7 +12,7 @@ function howMuchPaper(input) {
     return 2 * areaL + 2 * areaW + 2 * areaH + smallest;
 }
 
-function getTotal(list) {
+function getTotalPaper(list) {
     let total = 0;
     
     list.forEach(function(item) {
@@ -21,16 +22,7 @@ function getTotal(list) {
     return total;
 }
 
-function getRibbon(list) {
-    let total = 0;
-    
-    list.forEach(function(item) {
-        total += howMuchRibbon(item);
-    });
-    
-    return total;
-}
-
+// Part 2
 function howMuchRibbon(input) {
     let lwh = input.split('x'),
         l = lwh[0],
@@ -49,4 +41,14 @@ function howMuchRibbon(input) {
         });
     
     return l * w * h + 2 * values[0] + 2 * values[1];
+}
+
+function getTotalRibbon(list) {
+    let total = 0;
+    
+    list.forEach(function(item) {
+        total += howMuchRibbon(item);
+    });
+    
+    return total;
 }

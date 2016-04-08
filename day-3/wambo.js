@@ -1,3 +1,4 @@
+// Part 1
 function getHouses(input) {
     let i = 0,
         len = input.length,
@@ -31,6 +32,7 @@ function getHouses(input) {
     return total;
 }
 
+// Part 2
 function getYDelta(char) {
     let delta = 0;
     

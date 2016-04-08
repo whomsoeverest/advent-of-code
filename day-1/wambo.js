@@ -1,4 +1,5 @@
-function findFloor(input) {
+// Part 1
+function getFloor(input) {
     let floor = 0,
         i = 0, 
         len = input.length || 0,
@@ -14,7 +15,8 @@ function findFloor(input) {
     return floor;
 }
 
-function partTwo(input) {
+// Part 2
+function getBasementEntryPoint(input) {
     let floor = 0,
         iteration = 0,
         i = 0,
