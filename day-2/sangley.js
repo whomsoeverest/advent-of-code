@@ -18,9 +18,9 @@ var wrappingPaper = function(dimensions) {
 
 /* day 2 puzzle 2 */
 var ribbon = function(dimensions) {
-    var l = parseInt(dimensions[0])
-        ,w = parseInt(dimensions[1])
-        ,h = parseInt(dimensions[2]);
+    var l = parseInt(dimensions[0],10)
+        ,w = parseInt(dimensions[1],10)
+        ,h = parseInt(dimensions[2],10);
     
     return (l*w*h) + Math.min(2*(l+w),Math.min(2*(l+h),Math.min(2*(w+h))));
 }
