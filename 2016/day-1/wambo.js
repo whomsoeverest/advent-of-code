@@ -62,7 +62,6 @@ function getBunnyHQ(input) {
                 hqX = x;
                 hqY = y;
                 hqFound = true;
-                console.log('Found ', x, y);
             } else {
                 visited[x + ',' + y] = true;
             }
