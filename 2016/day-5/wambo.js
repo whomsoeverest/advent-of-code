@@ -23,29 +23,6 @@ function part1() {
 console.log(part1());
 
 // Part 2
-function l33t(pwd) {
-    let pass = [];
-
-    for(let i = 0; i < 8; i++) {
-        switch (pwd[i]) {
-            case '/':
-                pass[i] = '-';
-                break;
-            case '-':
-                pass[i] = '\\';
-                break;
-            case '\\':
-                pass[i] = '|';
-                break;
-            case '|':
-                pass[i] = '/';
-                break;
-        }
-    }
-
-    return pass;
-}
-
 function part2() {
     let input = 'ffykfhsq',
         password = [],
