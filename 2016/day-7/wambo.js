@@ -51,7 +51,6 @@ function part1() {
         }
 
         if (stringHasTLS) {
-            console.log(strings, hypernet);
             numberTLS++;
         }
     });
